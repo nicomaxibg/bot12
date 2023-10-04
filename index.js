@@ -7,7 +7,7 @@ require('dotenv').config();
 const welcomeChannelId1 = '1127539119086637096';
 const welcomeChannelId2 = '808125126293454850';
 const welcomeChannelId3 = '1046415778058088500';
-
+const token = require('config.json')
 const client = new CommandoClient({
   commandPrefix: '!',
   owner: '901916731562422324',
@@ -127,5 +127,4 @@ client.registry
     }
   });  
 
-  client.login('MTExMjY4NzMwNDQ2NTczMTYzNA.GqaC0r.zeHTMCRH-2cbdzBfcOSODXJ-wSMsRyTAGFaLac');
-  
+  client.login(token);
